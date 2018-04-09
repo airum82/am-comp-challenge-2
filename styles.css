@@ -1,0 +1,227 @@
+body {
+  background-color: #EFEFEF;
+}
+
+nav {
+  background-color: #2B2B2B;
+  width: 100%;
+  height: 17vh;
+  font-family: 'Raleway', sans-serif;;
+}
+
+ul {
+  margin: 0;
+  padding-top: 7vh;
+  font-size: 14px;
+  padding: 0 3vh 5vh;
+}
+
+li {
+  display: inline-block;
+  color: white;
+  margin-right: 3vw;
+  padding-top: 9vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-column-gap: 1vw;
+  grid-row-gap: 1.5vh;
+  justify-content: center;
+}
+
+article {
+  background-color: white;
+  width: 38%;
+  max-width: 250px;
+  min-width: 180px;
+}
+
+span {
+  margin-left: 1vw;
+}
+
+li:hover span {
+  opacity: .6;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li:hover .fa-user,
+li:hover .fa-bars,
+li:hover .fa-share-alt,
+li:hover .fa-caret-down,
+.far:hover {
+  color: #32B6FB;
+}
+
+article:hover {
+  border: 3px solid #32B6FB;
+}
+
+h1 {
+  margin-left: 10px;
+  font-weight: 200;
+  opacity: .7;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin-bottom: 0;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+h5 {
+  margin: 0;
+  font-weight: 200;
+}
+
+h6 {
+  margin: 10px 10px;
+}
+
+div {
+  margin-left: 20px;
+}
+
+.admin {
+  float: right;
+}
+
+.admin li {
+  padding-top: 0vh;
+  display: block;
+}
+
+.admin-color {
+  margin: 0;
+}
+
+.win-icon {
+  padding-top: 2vh;
+  height: 10vh;
+  padding-left: 25%;
+}
+
+.fas {
+  font-size: 3vh;
+}
+
+.fa-caret-down {
+  vertical-align: sub;
+  padding-left: 3px;
+}
+
+.artist-photo {
+  height: 21vh;
+  width: 100%;
+}
+
+.article-link {
+  color: black;
+  opacity: .6;
+  box-sizing: border-box;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.link-background {
+  background-color: #EFEFEF;
+  width: 86%;
+}
+
+.number-color {
+  color: #32B6FB;
+  margin: 0;
+  font-size: 24px;
+}
+
+.playlist-name {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.date {
+  margin-top: 0;
+  opacity: .6;
+  font-size: 13px;
+}
+
+.far {
+  display: block;
+  color: white;
+  font-size: 43px;
+  margin: 8px 0 0 8px
+}
+
+.view-number {
+  margin-top: 0;
+  text-align: center;
+  font-size: 22px;
+}
+
+.image {
+  background-image: url("images/VMA-artist.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+  width: 100%;
+  margin: 0px;
+}
+
+.view-count-flex {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 790px) {
+  main {
+    grid-template-columns: 30% 30% 30%
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  li {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 2vh;
+  }
+
+  ul {
+    padding-top: 3vh;
+
+  }
+
+  nav {
+    height: 21vh;
+  }
+
+  .admin {
+    padding: 0;
+  }
+
+  main {
+    grid-template-columns: 45% 45%;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  main {
+    grid-template-columns: 80%;
+  }
+
+  article {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
