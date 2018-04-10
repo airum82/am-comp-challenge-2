@@ -4,36 +4,37 @@ body {
 
 nav {
   background-color: #2B2B2B;
+  font-family: 'Raleway', sans-serif;
   width: 100%;
-  height: 17vh;
-  font-family: 'Raleway', sans-serif;;
 }
 
 ul {
+  font-size: 14px;
   margin: 0;
   padding-top: 7vh;
-  font-size: 14px;
-  padding: 0 3vh 5vh;
+  padding: 0 3vh 8vh;
 }
 
 li {
-  display: inline-block;
   color: white;
+  display: inline-block;
   margin-right: 3vw;
   padding-top: 9vh;
 }
 
 main {
   display: grid;
-  grid-template-columns: 23% 23% 23% 23%;
   grid-column-gap: 1vw;
-  grid-row-gap: 1.5vh;
+  grid-row-gap: 2vh;
+  grid-template-columns: 23% 23% 23% 23%;
   justify-content: center;
 }
 
 article {
+  -moz-box-shadow: 0 0 3px #ccc;
+  -webkit-box-shadow: 0 0 3px #ccc;
   background-color: white;
-  width: 38%;
+  box-shadow: 0 0 3px #ccc;
   max-width: 250px;
   min-width: 180px;
 }
@@ -98,7 +99,7 @@ div {
 }
 
 .admin li {
-  padding-top: 0vh;
+  padding-top: 2vh;
   display: block;
 }
 
@@ -106,9 +107,12 @@ div {
   margin: 0;
 }
 
+.admin-size {
+  font-size: 17px;
+}
+
 .win-icon {
-  padding-top: 2vh;
-  height: 10vh;
+  height: 9vh;
   padding-left: 25%;
 }
 
@@ -156,7 +160,7 @@ div {
   font-size: 13px;
 }
 
-.far {
+.fa-arrow-alt-circle-left {
   display: block;
   color: white;
   font-size: 43px;
@@ -164,7 +168,7 @@ div {
 }
 
 .view-number {
-  margin-top: 0;
+  margin: 0;
   text-align: center;
   font-size: 22px;
 }
